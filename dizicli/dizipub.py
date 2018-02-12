@@ -15,7 +15,7 @@ class DizipubCrawler(BaseDiziCrawler):
 
     def generate_episode_page_url(self):
         return "http://dizipub.com/" + self.episode['dizi_url'] + "-" + \
-               str(self.episode['season']) + "-sezon-" + str(self.episode['episode']) + "-bolum"
+               str(self.episode['season']) + "-sezon-" + str(self.episode['episode']) + "-bolum-izle"
 
     def after_body_loaded(self, text):
         page_dom = pq(text)
